@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-hex" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1f2e"/>
+      <stop offset="100%" style="stop-color:#050f18"/>
+    </linearGradient>
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond hexagonal -->
+  <polygon points="100,8 178,52 178,148 100,192 22,148 22,52"
+           fill="url(#bg-hex)" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Hexagones imbriqués (architecture hexagonale) -->
+  <polygon points="100,30 158,63 158,129 100,162 42,129 42,63"
+           fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+  <polygon points="100,50 140,73 140,119 100,142 60,119 60,73"
+           fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.25"/>
+  <polygon points="100,68 124,82 124,110 100,124 76,110 76,82"
+           fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Lignes ports/adapters symboliques -->
+  <g stroke="#38bdf8" stroke-width="1" opacity="0.5">
+    <!-- Ports entrants -->
+    <line x1="42" y1="82" x2="60" y2="88"/>
+    <line x1="42" y1="100" x2="60" y2="100"/>
+    <line x1="42" y1="118" x2="60" y2="112"/>
+    <!-- Ports sortants -->
+    <line x1="158" y1="82" x2="140" y2="88"/>
+    <line x1="158" y1="100" x2="140" y2="100"/>
+    <line x1="158" y1="118" x2="140" y2="112"/>
+  </g>
+
+  <!-- Coeur du domaine -->
+  <circle cx="100" cy="96" r="14" fill="#38bdf8" opacity="0.15"/>
+  <circle cx="100" cy="96" r="6" fill="#38bdf8" opacity="0.8"/>
+
+  <!-- Texte KORE -->
+  <text x="100" y="148" text-anchor="middle"
+        font-family="'JetBrains Mono', monospace" font-weight="700"
+        font-size="20" fill="#38bdf8" letter-spacing="3">KORE</text>
+
+  <!-- Texte HEXAGONAL -->
+  <text x="100" y="166" text-anchor="middle"
+        font-family="'JetBrains Mono', monospace" font-weight="400"
+        font-size="9" fill="#38bdf8" opacity="0.6" letter-spacing="3">HEXAGONAL</text>
+</svg>
